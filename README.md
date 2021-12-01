@@ -4,7 +4,7 @@ Using Java, SQL, and JavaFx
 
 Our program features
 
-  - -	This software will incorporate Java, and JavaFX.
+  - This software will incorporate Java, and JavaFX.
   -	A flexible and easy to use software would fill the gap of the correlation between achieving higher grades/GPA and taking care of oneself.
   -	Track eating, sleeping, and studying to see how the individual is.
   -	Give a survey on their current habits and lifestyle and give personalized advice on how they can do better.
