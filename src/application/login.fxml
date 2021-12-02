@@ -7,49 +7,57 @@
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
-   <left>
-      <AnchorPane prefHeight="407.0" prefWidth="228.0" style="-fx-background-color: #FFFF;" BorderPane.alignment="CENTER">
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.buttonController">
+   <children>
+      <AnchorPane prefHeight="600.0" prefWidth="900.0">
          <children>
-            <ImageView fitHeight="238.0" fitWidth="268.0" layoutX="14.0" layoutY="81.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="683.0" fitWidth="1152.0" layoutX="-153.0" layoutY="-24.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../Screen-Shot-2019-02-19-at-7.52.02-PM.png" />
+                  <Image url="@resources/Loggin%20(1).jpeg" />
                </image>
             </ImageView>
+            <Button fx:id="loginButtonID" layoutX="190.0" layoutY="343.0" mnemonicParsing="false" onAction="#Login" prefHeight="44.0" prefWidth="133.0" text="Login">
+               <font>
+                  <Font name="Lucida Fax Demibold" size="18.0" />
+               </font></Button>
+            <TextField fx:id="userID" layoutX="156.0" layoutY="226.0" prefHeight="39.0" prefWidth="214.0" promptText="Username">
+               <font>
+                  <Font size="18.0" />
+               </font></TextField>
+            <Label fx:id="errorLabel" layoutX="122.0" layoutY="178.0" opacity="0.0" prefHeight="48.0" prefWidth="307.0" text="Incorrect Username or Password" textFill="RED">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="100.0" layoutY="62.0" prefHeight="59.0" prefWidth="602.0" text="Welcome to Better Student!">
+               <font>
+                  <Font name="Lucida Fax Demibold" size="36.0" />
+               </font>
+            </Label>
+            <Label layoutX="162.0" layoutY="194.0" text="Please enter username:">
+               <font>
+                  <Font name="Lucida Fax Regular" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="154.0" layoutY="268.0" text="Please enter password:">
+               <font>
+                  <Font name="Lucida Fax Regular" size="18.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="passID" layoutX="149.0" layoutY="293.0" promptText="Password">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </PasswordField>
+            <Label fx:id="lblStatus" layoutX="117.0" layoutY="161.0" text="Status" textFill="#ff0101">
+               <font>
+                  <Font name="Lucida Fax Regular" size="18.0" />
+               </font>
+            </Label>
          </children>
       </AnchorPane>
-   </left>
-   <center>
-      <AnchorPane prefHeight="400.0" prefWidth="371.0" style="-fx-background-color: #FFFF;" BorderPane.alignment="CENTER">
-         <children>
-            <Label layoutX="34.0" layoutY="143.0" text="Username">
-               <font>
-                  <Font size="17.0" />
-               </font>
-            </Label>
-            <TextField fx:id="usernameTextField" layoutX="129.0" layoutY="138.0" prefHeight="26.0" prefWidth="173.0" promptText="Username" />
-            <Label layoutX="34.0" layoutY="182.0" text="Password">
-               <font>
-                  <Font size="17.0" />
-               </font>
-            </Label>
-            <Button fx:id="loginButton" layoutX="40.0" layoutY="261.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="240.0" style="-fx-background-color: #E96151;" text="Login" textFill="WHITE" />
-            <Button fx:id="cancelButton" layoutX="40.0" layoutY="308.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="240.0" style="-fx-background-color: #E96151;" text="Cancel" textFill="WHITE" />
-            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="16.0" layoutY="22.0" prefHeight="108.0" prefWidth="293.0" text="Better Student" textOverrun="CENTER_WORD_ELLIPSIS">
-               <font>
-                  <Font name="Telugu MN Bold" size="27.0" />
-               </font>
-            </Label>
-            <Label layoutX="55.0" layoutY="223.0" prefHeight="22.0" prefWidth="216.0" text="Invalid Login. Please try again." textFill="#f84606">
-               <font>
-                  <Font size="17.0" />
-               </font>
-            </Label>
-            <PasswordField fx:id="enterPasswordField" layoutX="129.0" layoutY="180.0" prefHeight="26.0" prefWidth="173.0" promptText="Password" />
-         </children>
-      </AnchorPane>
-   </center>
-</BorderPane>
+   </children>
+</StackPane>
