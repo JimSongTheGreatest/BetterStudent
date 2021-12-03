@@ -76,3 +76,30 @@ Our program features
         ├── studychart1.png
         └── summary.fxml
 ```
+
+### Project Set-Up requirements
+
+Settings:
+IDE: Eclipse
+
+Java1.8.202
+mysql-connector-java-8.0.16.jar - BetterStudent
+JavaFX
+Database: SQL, XAMPP, Apache
+
+Instruction:
+First check the settings above,
+Second, install and run XAMPP
+  Direct to "Manage Server"
+    Start MySQL Database
+      Start Apache Web Server
+Back to "Welcome" and click "Go to Application"
+  Here you should see localhost through phpMyAdmin
+    Click "New" on the left panel
+      type "sms" and click "Create"
+        Now you are at empty db so now we click "import" on top panels
+          Click Choose File
+            Find sms.sql file within base directory of our project.
+              Make sure you click "Go" on the right below to proceed.
+                Now you should see forms for database is created
+Then you just run on main.java in any IDE (i.e Eclipse)
