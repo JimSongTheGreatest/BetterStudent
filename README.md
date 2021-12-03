@@ -19,14 +19,60 @@ Our program features
 ├── Screen-Shot-2019-02-19-at-7.52.02-PM.png
 ├── bin
 │   └── application
-│       ├── LoginController.class
 │       ├── Main.class
-│       └── login.fxml
+│       ├── application.css
+│       ├── buttonController.class
+│       ├── eating.fxml
+│       ├── gpa.fxml
+│       ├── logIn.fxml
+│       ├── main.fxml
+│       ├── resources
+│       │   ├── EAT1.jpg
+│       │   ├── GPA1\ (1).jpg
+│       │   ├── Loggin\ (1).jpeg
+│       │   ├── SLEEP\ (1).jpg
+│       │   ├── SLEEP1.jpg
+│       │   ├── STUDY.jpg
+│       │   ├── SUM.jpg
+│       │   ├── apple.jpeg
+│       │   ├── eatchart1.jpg
+│       │   ├── gpachart.jpg
+│       │   ├── sleepchart.png
+│       │   ├── studychart1.png
+│       │   ├── sumchart.jpg
+│       │   └── summary.jpg
+│       ├── sleep.fxml
+│       ├── study.fxml
+│       ├── studychart1.png
+│       └── summary.fxml
 ├── build.fxbuild
+├── requirements.txt
 └── src
     └── application
-        ├── LoginController.java
         ├── Main.java
-        ├── Sample.fxml
-        └── login.fxml
+        ├── application.css
+        ├── buttonController.java
+        ├── eating.fxml
+        ├── gpa.fxml
+        ├── logIn.fxml
+        ├── main.fxml
+        ├── resources
+        │   ├── EAT1.jpg
+        │   ├── GPA1\ (1).jpg
+        │   ├── Loggin\ (1).jpeg
+        │   ├── SLEEP\ (1).jpg
+        │   ├── SLEEP1.jpg
+        │   ├── STUDY.jpg
+        │   ├── SUM.jpg
+        │   ├── apple.jpeg
+        │   ├── eatchart1.jpg
+        │   ├── gpachart.jpg
+        │   ├── sleepchart.png
+        │   ├── studychart1.png
+        │   ├── sumchart.jpg
+        │   └── summary.jpg
+        ├── sleep.fxml
+        ├── study.fxml
+        ├── studychart1.png
+        └── summary.fxml
 ```
