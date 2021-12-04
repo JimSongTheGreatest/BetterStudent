@@ -86,14 +86,15 @@ Java1.8.202
 mysql-connector-java-8.0.16.jar - BetterStudent
 JavaFX
 Database: SQL, XAMPP, Apache
-
+```HTML
 Instruction:
 First check the settings above,
 Second, install and run XAMPP
   Direct to "Manage Server"
     Start MySQL Database
       Start Apache Web Server
-Back to "Welcome" and click "Go to Application"
+Back to "Welcome" and click "Go to Application"]
+    On URL type: http://localhost/phpmyadmin/index.php?route=/sql&server=1&db=sms&table=users&pos=0
   Here you should see localhost through phpMyAdmin
     Click "New" on the left panel
       type "sms" and click "Create"
@@ -103,3 +104,4 @@ Back to "Welcome" and click "Go to Application"
               Make sure you click "Go" on the right below to proceed.
                 Now you should see forms for database is created
 Then you just run on main.java in any IDE (i.e Eclipse)
+```
