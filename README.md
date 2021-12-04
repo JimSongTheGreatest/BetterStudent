@@ -88,7 +88,21 @@ JavaFX
 Database: SQL, XAMPP, Apache
 ```
 ```HTML
-Instruction:
+Instruction For Windows:
+Click start button next to Apache and MySQL
+  Copy the link http://localhost/phpmyadmin/index.php?route=/sql&server=1&db=sms&table=users&pos=0 and past it in url
+  Click "New" on the left panel
+    type "sms" in database name and click "Create"
+      Now you are at empty db so now we click "import" on top panels
+        Click Choose File
+          Find sms.sql file within base directory of our project.
+            Make sure you click "Go" on the right below to proceed.
+              Now you should see forms for database is created
+Then you just run on main.java in any IDE (i.e Eclipse)
+
+
+
+Instruction For Mac:
 First check the settings above,
 Second, install and run XAMPP
   Direct to "Manage Server"
