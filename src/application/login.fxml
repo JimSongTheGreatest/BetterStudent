@@ -47,7 +47,7 @@
                   <Font name="Lucida Fax Regular" size="18.0" />
                </font>
             </Label>
-            <PasswordField fx:id="passID" layoutX="149.0" layoutY="293.0" promptText="Password">
+            <PasswordField fx:id="passID" layoutX="157.0" layoutY="293.0" prefHeight="35.0" prefWidth="214.0" promptText="Password">
                <font>
                   <Font size="18.0" />
                </font>
@@ -57,7 +57,7 @@
                   <Font name="Lucida Fax Regular" size="18.0" />
                </font>
             </Label>
-            <Button fx:id="singup" layoutX="190.0" layoutY="407.0" mnemonicParsing="false" onAction="#singup" prefHeight="44.0" prefWidth="133.0" text="Signup">
+            <Button fx:id="singup" layoutX="190.0" layoutY="407.0" mnemonicParsing="false" onAction="#singup" prefHeight="44.0" prefWidth="133.0" text="Sign-Up">
                <font>
                   <Font name="Lucida Fax Demibold" size="18.0" />
                </font>

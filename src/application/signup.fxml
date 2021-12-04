@@ -19,7 +19,7 @@
                   <Image url="@resources/Loggin%20(1).jpeg" />
                </image>
             </ImageView>
-            <Button fx:id="makeAccount" layoutX="190.0" layoutY="343.0" mnemonicParsing="false" onAction="#makeAccount" prefHeight="44.0" prefWidth="133.0" text="Singnup">
+            <Button fx:id="makeAccount" layoutX="190.0" layoutY="343.0" mnemonicParsing="false" onAction="#makeAccount" prefHeight="44.0" prefWidth="133.0" text="Sign-Up">
                <font>
                   <Font name="Lucida Fax Demibold" size="18.0" />
                </font></Button>
@@ -47,7 +47,7 @@
                   <Font name="Lucida Fax Regular" size="18.0" />
                </font>
             </Label>
-            <PasswordField fx:id="pass" layoutX="149.0" layoutY="293.0" promptText="Password">
+            <PasswordField fx:id="pass" layoutX="157.0" layoutY="293.0" prefHeight="35.0" prefWidth="214.0" promptText="Password">
                <font>
                   <Font size="18.0" />
                </font>

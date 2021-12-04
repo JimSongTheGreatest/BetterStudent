@@ -30,7 +30,7 @@
             <Image url="@resources/sleepchart.png" />
          </image>
       </ImageView>
-      <Label layoutX="37.0" layoutY="133.0" text="Please enter number of meals eaten today:">
+      <Label layoutX="98.0" layoutY="130.0" text="Please enter number of hours you slept today:">
          <font>
             <Font name="Lucida Fax Regular" size="24.0" />
          </font>

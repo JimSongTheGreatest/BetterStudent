@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.buttonController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.buttonController">
    <children>
       <ImageView fitHeight="606.0" fitWidth="910.0" layoutX="-5.0" layoutY="-3.0" pickOnBounds="true">
          <image>
@@ -29,17 +29,17 @@
             <Image url="@resources/gpachart.jpg" />
          </image>
       </ImageView>
-      <Label layoutX="27.0" layoutY="128.0" text="Please enter your G.P.A:">
+      <Label layoutX="156.0" layoutY="130.0" text="Please enter your G.P.A:">
          <font>
             <Font name="Lucida Fax Regular" size="24.0" />
          </font>
       </Label>
-      <TextField fx:id="myTextField" layoutX="324.0" layoutY="117.0" prefHeight="52.0" prefWidth="89.0" promptText="ex) 3.0">
+      <TextField fx:id="myTextField" layoutX="406.0" layoutY="118.0" prefHeight="52.0" prefWidth="89.0" promptText="ex) 3.0">
          <font>
             <Font name="Lucida Fax Regular" size="18.0" />
          </font>
       </TextField>
-      <Button fx:id="myButton" layoutX="426.0" layoutY="117.0" mnemonicParsing="false" onAction="#SubmitGpa" prefHeight="52.0" prefWidth="89.0" text="ENTER">
+      <Button fx:id="myButton" layoutX="505.0" layoutY="118.0" mnemonicParsing="false" onAction="#SubmitGpa" prefHeight="52.0" prefWidth="89.0" text="ENTER">
          <font>
             <Font name="Lucida Fax Demibold" size="18.0" />
          </font></Button>

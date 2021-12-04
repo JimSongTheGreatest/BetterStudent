@@ -7,7 +7,7 @@ public class User implements TimeStudied, TimeSlept, MealsEaten {
 	private int timeStudied;
 	private int hrsSlept;
 	private int numMinsEaten;
-
+	
 	public User(int id, double gpa, int timeStudied, int hrsSlept, int numMinsEaten) {
 		this.id = id;
 		this.gpa = gpa;

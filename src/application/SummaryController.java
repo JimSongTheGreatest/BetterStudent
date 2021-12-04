@@ -27,15 +27,22 @@ public class SummaryController implements Initializable {
 	Label hrsSleptLbl;
 	@FXML
 	Label optimalHrsSleptLbl;
+	@FXML
+	Label userGPALb1;
+	@FXML
+	Label userOptimalGPALb1;
 
 	String status;
+	String status1;
+	String status2;
+	String status3;
+	
 	@Override
 	public void initialize(URL arg0, ResourceBundle arg1) {
 		// TODO Auto-generated method stub
 
 		if (buttonController.user.getOptimalStudyHrs() <= 3) {
 			status = "Below average study time, please try to study more hours a day";
-
 		} else if (buttonController.user.getOptimalStudyHrs() <= 6) {
 			status = "Average number of study hours, good job!";
 		} else if (buttonController.user.getOptimalStudyHrs() <= 9) {
@@ -50,13 +57,47 @@ public class SummaryController implements Initializable {
 
 		hrsStudiedLbl.setText("Hours Studied: " + buttonController.user.getOptimalStudyHrs());
 		optimalHrsStudiedLbl.setText(status);
+		
+		if (buttonController.user.getOptimalEatMins() <= 2) {
+	        status1 = "You are eating too little! Maybe eat more to feel more energized.";
+	    } else if (buttonController.user.getOptimalEatMins() == 3) {
+	        status1 = "This is the recommended meals eaten for most people, good job!"; 
+	    } else if (buttonController.user.getOptimalEatMins() > 3) {
+	    	status1 = "The recommended meals eaten per day is 3. This may cause sluggishness.";
+	    }
+		
 		mealsEatenLbl.setText("Meals Eaten: " + buttonController.user.getOptimalEatMins());
-		optimalMeals
-				.setText("The optimal number of meals to eat per day is: " + buttonController.user.getOptimalEatMins());
+		optimalMeals.setText(status1);
+		
+		if (buttonController.user.getOptimalSleepHrs() < 6) {
+	        status2 = "You are sleeping too little, try to get more rest to feel more energized.";
+	    } else if (buttonController.user.getOptimalSleepHrs() > 6 && buttonController.user.getOptimalSleepHrs() <= 8) {
+	        status2 = "This is the recommended amount of sleep each night. Good job!";
+	    } else if (buttonController.user.getOptimalSleepHrs() > 8 && buttonController.user.getOptimalSleepHrs() <= 24) {	
+	    	status2 = "You are sleeping too much, this could lead to laziness throughout the day";
+	    }
+		
 		hrsSleptLbl.setText("Hours Slept: " + buttonController.user.getOptimalSleepHrs());
-		optimalHrsSleptLbl.setText(
-				"The optimal number of hours to spleet per day is: " + buttonController.user.getOptimalSleepHrs());
+		optimalHrsSleptLbl.setText(status2);
+		
+		if (buttonController.user.getGpa() <= 2) {
+			status3 = "Below average GPA, please consider taking a break or changing your major";
 
+		} else if (buttonController.user.getGpa() <= 3) {
+			status3 = "You can do it, keep studying hard to get above 3.0 GPA";
+		} else if (buttonController.user.getGpa() <= 3.4) {
+			status3 = "You are doing fine. Your new goal is to get above 3.5 GPA";
+		} else if (buttonController.user.getGpa() <= 3.7) {
+			status3 = "Keep up the good work. Nice!";
+
+		} else if (buttonController.user.getGpa() <= 4) {
+			status3 = "Please make sure to take study breaks. GOOD JOB!";
+
+		}
+		
+		userGPALb1.setText("GPA: " + buttonController.user.getGpa());
+		userOptimalGPALb1.setText(status3);
+		
 	}
 
 	// handle Home Button
