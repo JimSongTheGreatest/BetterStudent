@@ -78,7 +78,7 @@ Our program features
 ```
 
 ### Project Set-Up requirements
-
+```HTML
 Settings:
 IDE: Eclipse
 
@@ -86,6 +86,7 @@ Java1.8.202
 mysql-connector-java-8.0.16.jar - BetterStudent
 JavaFX
 Database: SQL, XAMPP, Apache
+```
 ```HTML
 Instruction:
 First check the settings above,
