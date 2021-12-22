@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="956.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.buttonController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="956.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.buttonController">
    <children>
       <ImageView fitHeight="607.0" fitWidth="1233.0" pickOnBounds="true" preserveRatio="true">
          <image>
@@ -30,7 +30,7 @@
             <Image url="@resources/studychart1.png" />
          </image>
       </ImageView>
-      <Label layoutX="174.0" layoutY="125.0" prefHeight="45.0" prefWidth="378.0" text="Please type hours you studied today:">
+      <Label layoutX="136.0" layoutY="125.0" prefHeight="45.0" prefWidth="401.0" text="Please type hours you studied today:">
          <font>
             <Font name="Lucida Fax Regular" size="24.0" />
          </font>

@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SummaryController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SummaryController">
    <children>
       <ImageView fitHeight="606.0" fitWidth="1032.0" pickOnBounds="true" preserveRatio="true">
          <image>
@@ -21,42 +21,42 @@
       </Button>
       <Label fx:id="optimalHrsSleptLbl" layoutX="14.0" layoutY="411.0" text="The optimal number of hours to spleet per day is:">
          <font>
-            <Font name="Lucida Fax Demibold" size="19.0" />
+            <Font name="System Bold" size="19.0" />
          </font>
       </Label>
       <Label fx:id="optimalMeals" layoutX="16.0" layoutY="305.0" text="The optimal number of meals to eat per day is:">
          <font>
-            <Font name="Lucida Fax Demibold" size="19.0" />
+            <Font name="System Bold" size="19.0" />
          </font>
       </Label>
       <Label fx:id="optimalHrsStudiedLbl" layoutX="16.0" layoutY="194.0" text="The optimal number of hours to study per day is:">
          <font>
-            <Font name="Lucida Fax Demibold" size="19.0" />
+            <Font name="System Bold" size="19.0" />
          </font>
       </Label>
       <Label fx:id="hrsStudiedLbl" layoutX="16.0" layoutY="169.0" text="Hours Studied:">
          <font>
-            <Font name="Lucida Fax Demibold" size="19.0" />
+            <Font name="System Bold" size="19.0" />
          </font>
       </Label>
       <Label fx:id="mealsEatenLbl" layoutX="16.0" layoutY="288.0" text="Meals Eaten:">
          <font>
-            <Font name="Lucida Fax Demibold" size="19.0" />
+            <Font name="System Bold" size="19.0" />
          </font>
       </Label>
       <Label fx:id="hrsSleptLbl" layoutX="16.0" layoutY="387.0" text="Hours Slept:">
          <font>
-            <Font name="Lucida Fax Demibold" size="19.0" />
+            <Font name="System Bold" size="19.0" />
          </font>
       </Label>
-      <Label layoutX="206.0" layoutY="31.0" text="Summary">
+      <Label layoutX="195.0" layoutY="31.0" text="Summary">
          <font>
-            <Font name="Lucida Fax Demibold" size="50.0" />
+            <Font name="System Bold" size="48.0" />
          </font>
       </Label>
        <Label fx:id="userGPALb1" layoutX="17.0" layoutY="453.0" prefHeight="37.0" prefWidth="384.0" text="G.P.A:">
          <font>
-            <Font name="Lucida Fax Demibold" size="19.0" />
+            <Font name="System Bold" size="19.0" />
          </font></Label>
       <Label fx:id="userOptimalGPALb1" layoutX="17.0" layoutY="483.0" prefHeight="37.0" prefWidth="940.0" text="TIP: Take in to account the recommendations  listed above to increase or maintain your G.P.A:">
          <font>

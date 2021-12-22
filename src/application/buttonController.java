@@ -1,5 +1,6 @@
 package application;
 
+import java.sql.Connection;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -24,12 +25,14 @@ public class buttonController {
 	Label lblStatus;
 	public static User user;
 	Stage signupStage;
+        
+        public Connection con = Database.getConnection();
 
 	public void Login(ActionEvent action) throws Exception {
 
 		try {
 			Database db = new Database();
-			db.preStatement = db.connection.prepareStatement(
+			db.preStatement = con.prepareStatement(
 					"SELECT * FROM users JOIN schedule " + "ON users.id = schedule.id WHERE users.username = '"
 							+ userID.getText() + "' AND PASSWORD = '" + passID.getText() + "'");
 			db.result = db.preStatement.executeQuery();
@@ -63,7 +66,7 @@ public class buttonController {
 	public void deleteAccount(ActionEvent action) throws Exception{
 		try {
 			Database db = new Database();
-			db.preStatement = db.connection.prepareStatement("DELETE FROM users WHERE id ='"+user.getId()+"'");
+			db.preStatement = con.prepareStatement("DELETE FROM users WHERE id ='"+user.getId()+"'");
 			db.preStatement.executeUpdate();
 			System.exit(0);
 		}catch(Exception e) {
@@ -75,7 +78,7 @@ public class buttonController {
 
 		try {
 			Database db = new Database();
-			db.preStatement = db.connection.prepareStatement("INSERT INTO users(username,password) VALUES(?,?)");
+			db.preStatement = con.prepareStatement("INSERT INTO users(username,password) VALUES(?,?)");
 			db.preStatement.setString(1, username.getText());
 			db.preStatement.setString(2, pass.getText());
 			db.preStatement.executeUpdate();
@@ -83,7 +86,7 @@ public class buttonController {
 			int id = getID(username.getText());
 			
 			db = new Database();
-			db.preStatement = db.connection.prepareStatement(
+			db.preStatement = con.prepareStatement(
 					"INSERT INTO schedule(hrsStudy,hrsSlept,eating,gpa,id) VALUES(?,?,?,?,?)");
 			db.preStatement.setInt(1, 0);
 			db.preStatement.setInt(2, 0);
@@ -102,11 +105,12 @@ public class buttonController {
 	public int getID(String name) {
 		try {
 			Database db = new Database();
-			db.preStatement = db.connection.prepareStatement("SELECT * FROM users WHERE username ='"+name+"'");
+			db.preStatement = con.prepareStatement("SELECT * FROM users WHERE username ='"+name+"'");
 			db.result = db.preStatement.executeQuery();
 			if(db.result.next()) {
 				return db.result.getInt("id");
 			}
+                        db.connection.close();
 		}catch(Exception e) {
 			e.printStackTrace();
 		}
@@ -230,7 +234,7 @@ public class buttonController {
 				label.setText("Your number of meals eaten," + numEat + ", is saved!");
 				try {
 					Database db = new Database();
-					db.preStatement = db.connection.prepareStatement(
+					db.preStatement = con.prepareStatement(
 							"UPDATE schedule set eating = '"+numEat+"' WHERE id = '"+user.getId()+"'");
 					db.preStatement.execute();
 				} catch (Exception e) {
@@ -295,7 +299,7 @@ public class buttonController {
 				label.setText("Your GPA," + gpaScore + ", is saved!");
 				try {
 					Database db = new Database();
-					db.preStatement = db.connection.prepareStatement(
+					db.preStatement = con.prepareStatement(
 							"UPDATE schedule set gpa = '"+gpaScore+"' WHERE id = '"+user.getId()+"'");
 					db.preStatement.execute();
 				} catch (Exception e) {
@@ -360,7 +364,7 @@ public class buttonController {
 				label.setText("Your hours slept," + hrsSleep + ", is saved!");
 				try {
 					Database db = new Database();
-					db.preStatement = db.connection.prepareStatement(
+					db.preStatement = con.prepareStatement(
 							"UPDATE schedule set hrsSlept = '"+hrsSleep+"' WHERE id = '"+user.getId()+"'");
 					db.preStatement.execute();
 				} catch (Exception e) {
@@ -425,7 +429,7 @@ public class buttonController {
 				label.setText("Your study hours per day is," + hrsStudy + ", is saved!");
 				try {
 					Database db = new Database();
-					db.preStatement = db.connection.prepareStatement(
+					db.preStatement = con.prepareStatement(
 							"UPDATE schedule set hrsStudy = '"+hrsStudy+"' WHERE id = '"+user.getId()+"'");
 					db.preStatement.execute();
 				} catch (Exception e) {
